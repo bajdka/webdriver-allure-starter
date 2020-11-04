@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "lib": [
+      "es7",
+      "dom"
+    ],
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "*": [ "./*" ],
+      "views/*": ["./__views__/*"],
+      "test/*": ["./__tests__/*"],
+      "data/*": ["./data/*"],
+      "utils/*": ["./utils/*"],
+    },
+    "types": [
+      "webdriverio",
+      "node",
+      "jasmine",
+    ],
+    "esModuleInterop": true, 
+  },
+  "include": [
+    "__tests__/**/*",
+    "__views__/**/*",
+    "api/**/*",
+    "data/**/*",
+    "utils/**/*"
+  ]
+}
